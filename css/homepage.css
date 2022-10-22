@@ -1,0 +1,30 @@
+#homepage, #homepage .hidden_link {
+    background-color: orange;
+}
+
+#about, #work, #contact, #about .hidden_link, #work .hidden_link, #contact .hidden_link {
+    background-color: gray;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    padding: 0 30px;
+}
+
+.profile_pic {
+    background-image: url('../resources/homepage/profile_pic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: calc(100vh - 80px);
+    border-radius: 25px;
+    box-shadow: rgb(19,19,19) 5px 5px 10px 1px;
+}
+
+.info {
+    width: 
+}

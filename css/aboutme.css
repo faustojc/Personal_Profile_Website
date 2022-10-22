@@ -1,0 +1,7 @@
+#about, #about .hidden_link {
+    background-color: orange;
+}
+
+#homepage, #work, #contact, #homepage .hidden_link, #work .hidden_link, #contact .hidden_link {
+    background-color: gray;
+}
