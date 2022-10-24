@@ -1,3 +1,14 @@
+/* Animation */
+@keyframes contentSlideUp {
+    0% {
+        transform: translateY(5%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
 body {
     margin: 0;
     overflow: hidden;
@@ -10,14 +21,21 @@ body {
     margin: 0;
 }
 
+.content {
+    animation: 1s ease 0s 1 contentSlideUp;
+}
+
 .logo {
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     right: 60px;
     top: 30px;
     z-index: 3;
     border-radius: 50%;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
 }
 
 .background {
@@ -25,6 +43,7 @@ body {
     width: 100%;
     height: 100vh;
     z-index: -1;
+    filter: brightness(30%);
 }
 
 .header {
