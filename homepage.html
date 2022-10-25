@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/homepage.css" rel="stylesheet" />
     <link href="css/main_style.css" rel="stylesheet" />
+    <script src="js/frameVisible"></script>
 </head>
 <body>
     <img src="resources/background.jpg" alt="background img" class="background" />
@@ -43,11 +44,12 @@
                     hobby for fun and learning. I am passionate about building excellent software that improves 
                     the lives of those around me.
                 </p>
-                <button class="button">
+                <button class="button" onclick="visible()">
                     <span class="button_text">MORE ABOUT ME</span>
                     <span class="button_arrow"></span>
                 </button>
             </div>
+            <iframe src="about.html" id="iframe_visible" class="appear_top_aboutme" frameborder="0"></iframe>
         </div>
     </div>
 </body>

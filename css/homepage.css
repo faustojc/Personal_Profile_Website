@@ -10,7 +10,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: auto;
     height: inherit;
     margin: 0 180px 0 30px;
@@ -20,7 +20,7 @@
     background-image: url('../resources/homepage/profile_pic.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 520px;
+    width: 620px;
     height: calc(100vh - 80px);
     border-radius: 25px;
     box-shadow: rgb(0, 0, 0) 5px 5px 10px 1px;
@@ -97,3 +97,14 @@
 .button_arrow::after {
     content: url(../resources/homepage/button-arrow.png);
 }
+
+.appear_top_aboutme {
+    position: absolute;
+    z-index: 10;
+    overflow-x: hidden;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    visibility: hidden;
+}
+
