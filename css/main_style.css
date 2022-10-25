@@ -1,7 +1,7 @@
 /* Animation */
 @keyframes contentSlideUp {
     0% {
-        transform: translateY(5%);
+        transform: translateY(10%);
     }
 
     100% {
@@ -22,7 +22,7 @@ body {
 }
 
 .content {
-    animation: 1s ease 0s 1 contentSlideUp;
+    animation: 1s ease-out 0s 1 contentSlideUp;
 }
 
 .logo {
@@ -90,7 +90,9 @@ li {
     line-height: 50px;
     font-size: 18px;
     letter-spacing: 2px;
-    font-family: 'Poppins,sans-serif';
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
     color: white;
     visibility: hidden;
     z-index: -1;
