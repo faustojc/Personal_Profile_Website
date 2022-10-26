@@ -50,6 +50,32 @@ body {
     filter: brightness(30%);
 }
 
+.outer_text, .inner_text {
+    position: absolute;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 1px;
+    font-family: Poppins, sans-serif;
+}
+
+.outer_text {
+    color: white;
+    z-index: 2;
+    font-size: 60px;
+    line-height: 145px;
+}
+
+h1.outer_text span {
+    color: orange;
+}
+
+.inner_text {
+    color: gray;
+    z-index: 1;
+    font-size: 100px;
+    opacity: 0.3;
+}
+
 .header {
     position: fixed;
     right: 30px;
