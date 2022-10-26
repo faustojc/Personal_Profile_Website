@@ -98,7 +98,7 @@
     content: url(../resources/homepage/button-arrow.png);
 }
 
-.appear_top_aboutme {
+#iframe_visible {
     position: absolute;
     z-index: 10;
     overflow-x: hidden;

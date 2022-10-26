@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Haiztek's Personal Profile</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/homepage.css" rel="stylesheet" />
     <link href="css/main_style.css" rel="stylesheet" />
-    <script src="js/frameVisible"></script>
+    <script src="js/frameVisible.js"></script>
 </head>
 <body>
     <img src="resources/background.jpg" alt="background img" class="background" />
@@ -44,12 +45,12 @@
                     hobby for fun and learning. I am passionate about building excellent software that improves 
                     the lives of those around me.
                 </p>
-                <button class="button" onclick="visible()">
+                <button type="button" class="button" onclick="iframeVisible()">
                     <span class="button_text">MORE ABOUT ME</span>
                     <span class="button_arrow"></span>
                 </button>
             </div>
-            <iframe src="about.html" id="iframe_visible" class="appear_top_aboutme" frameborder="0"></iframe>
+            <iframe src="about.html" id="iframe_visible" class="appear_top_aboutme" title="About Me"></iframe>
         </div>
     </div>
 </body>
