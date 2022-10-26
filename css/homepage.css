@@ -7,13 +7,9 @@
 }
 
 .content {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: auto;
-    height: inherit;
-    margin: 0 180px 0 30px;
 }
 
 .profile_pic {

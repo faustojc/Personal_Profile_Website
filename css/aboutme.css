@@ -41,5 +41,5 @@
 
 .info {
     position: relative;
-
+    width: inherit;
 }

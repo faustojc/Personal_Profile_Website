@@ -16,6 +16,7 @@ body {
 }
 
 .container {
+    position: relative;
     width: 100%;
     height: inherit;
     margin: 0;
@@ -23,6 +24,9 @@ body {
 
 .content {
     animation: 1s ease-out 0s 1 contentSlideUp;
+    width: auto;
+    height: inherit;
+    margin: 0 180px 0 30px;
 }
 
 .logo {
