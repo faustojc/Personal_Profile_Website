@@ -135,67 +135,86 @@ ul.info_lists > li {
     border-top: 1px solid rgb(66, 66, 66);
     max-width: 40%;
     height: 1px;
-    margin: 70px auto 55px;
+    margin: 10px auto 55px;
 }
 
-/* Circular Progress*/
-
-.circle-wrap {
-    margin: 150px auto;
-    width: 150px;
-    height: 150px;
-    background: #fefcff;
-    border-radius: 50%;
-    border: 1px solid #cdcbd0;
-}
-
-.circle-wrap .circle .mask,
-.circle-wrap .circle .fill {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    border-radius: 50%;
-}
-
-.circle-wrap .circle .mask {
-    clip: rect(0px, 150px, 150px, 75px);
-}
-
-.circle-wrap .inside-circle {
-    width: 122px;
-    height: 122px;
-    border-radius: 50%;
-    background: #d2eaf1;
-    line-height: 120px;
+.skills_text {
+    position: relative;
+    width: 100%;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
     text-align: center;
-    margin-top: 14px;
-    margin-left: 14px;
-    color: #1e51dc;
+    margin: 30px 0;
+}
+
+.display_skills_circle {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill_content {
+    width: 300px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center
+}
+
+.percent, svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.percent svg {
+    transform: rotate(270deg);
+}
+
+.percent svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 8;
+    stroke: rgb(66, 66, 66);
+    transform: translate(5px, 5px);
+}
+
+.percent svg circle:nth-child(2) {
+    stroke: #ffd800;
+    stroke-dasharray: 440px;
+    animation: rotateFill 2s ease-out forwards;
+}
+
+@keyframes rotateFill {
+    from {
+        stroke-dashoffset: calc(440px - (440px * 0) / 100);
+    }
+
+    to {
+        stroke-dashoffset: calc(440px - (440px * var(--num)) / 100);
+    }
+}
+
+.value {
+    color: #ffd800;
     position: absolute;
-    z-index: 100;
-    font-weight: 700;
-    font-size: 2em;
+    display: flex;
+    inset: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 400;
 }
 
-/* color animation */
-
-/* 3rd progress bar */
-.mask .fill {
-    clip: rect(0px, 75px, 150px, 0px);
-    background-color: #227ded;
-}
-
-.mask.full,
-.circle .fill {
-    animation: fill ease-in-out 3s;
-    transform: rotate(135deg);
-}
-
-@keyframes fill{
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(135deg);
-    }
+.value span {
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 2px;
 }
