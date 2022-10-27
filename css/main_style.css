@@ -78,6 +78,18 @@ html, body, .container {
     filter: brightness(30%);
 }
 
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    padding: 20px 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
 .outer_text, .inner_text {
     position: absolute;
     font-weight: 800;
