@@ -1,16 +1,46 @@
 /* Animation */
 @keyframes contentSlideUp {
     0% {
-        transform: translateY(10%);
+        transform: translateY(-5%);
+        opacity: 0;
     }
 
-    100% {
-        transform: translateY(0%);
+    60%, 100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes revealContent {
+    0% {
+        height: 100%;
+    }
+
+    20% {
+        height: 95%;
+    }
+
+    75%, 100% {
+        height: 0%;
+        visibility: hidden;
     }
 }
 
 html, body, .container {
     margin: 0;
+    height: 100%;
+}
+
+.container::after {
+    content: '';
+    position: fixed;
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    overflow: hidden;
+    animation: 1s ease-in 0s revealContent;
+    animation-fill-mode: forwards;
 }
 
 .container {
@@ -21,7 +51,7 @@ html, body, .container {
 
 .content {
     position: relative;
-    animation: 1s ease-out 0s 1 contentSlideUp;
+    animation: 2s ease 0s 1 contentSlideUp;
     max-width: 1200px;
     height: auto;
     margin: 0 110px;
@@ -33,7 +63,7 @@ html, body, .container {
     height: 60px;
     right: 40px;
     top: 30px;
-    z-index: 3;
+    z-index: 5;
     border-radius: 50%;
     border-color: white;
     border-width: 2px;
@@ -79,7 +109,7 @@ h1.outer_text span {
     right: 18px;
     top: 30%;
     width: 110px;
-    z-index: 3;
+    z-index: 5;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
