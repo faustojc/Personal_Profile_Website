@@ -110,10 +110,10 @@ h1.outer_text span {
 }
 
 .inner_text {
-    color: gray;
+    color: white;
     z-index: 1;
     font-size: 90px;
-    opacity: 0.3;
+    opacity: 0.1;
 }
 
 .header {
