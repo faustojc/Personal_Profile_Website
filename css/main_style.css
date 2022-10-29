@@ -26,6 +26,10 @@
     }
 }
 
+*, :after, :before {
+    box-sizing: border-box;
+}
+
 html, body, .container {
     margin: 0;
     height: 100%;
