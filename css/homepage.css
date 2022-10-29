@@ -97,7 +97,7 @@ body {
     justify-content: center;
     color: white;
     width: 70px;
-    height: 53px;
+    height: inherit;
     background-color: orange;
     right: -1px;
     top: -2px;
