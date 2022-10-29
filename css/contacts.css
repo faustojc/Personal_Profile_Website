@@ -14,11 +14,13 @@
 
 .f_content {
     width: 800px;
+    padding-top: 70px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .f_content div {
+    height: var(--h);
     margin-bottom: 30px;
     padding: 0 15px;
 }
@@ -27,16 +29,26 @@
     width: 50%;
 }
 
-.contact_form input[type=text], .contact_form input[type=email] {
+.f_subject, .f_message {
+    width: 100%;
+    width: -webkit-fill-available;
+}
+
+.f_content input[type=text], .f_content input[type=email], .f_content textarea {
     background-color: rgb(19, 19, 19);
     color: white;
     border-color: rgb(59, 59, 59);
     border-style: solid;
-    border-radius: 40px;
+    border-radius: 20px;
     border-width: 1px;
     padding: 11px 26px;
     margin: 0 10px;
-    width: -webkit-fill-available; 
+    width: -webkit-fill-available;
     width: 100%;
-    height: 30px;
+    height: auto;
+}
+
+.f_message textarea {
+    height: var(--h);
+    resize: vertical;
 }
