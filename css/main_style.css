@@ -44,17 +44,20 @@ html, body, .container {
 }
 
 .container {
-    width: 100%;
+    position: relative;
+    width: auto;
     min-height: inherit;
     display: flex;
+    box-sizing: border-box;
 }
 
 .content {
-    position: relative;
-    animation: 2s ease 0s 1 contentSlideUp;
     width: 100%;
+    width: -moz-available; /* WebKit-based browsers */
+    width: -webkit-fill-available; /* Mozilla-based */
     height: auto;
-    margin: 0 110px;
+    margin: 0 180px 0 100px;
+    animation: 2s ease 0s 1 contentSlideUp;
 }
 
 .logo {
