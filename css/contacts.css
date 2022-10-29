@@ -2,6 +2,41 @@
     background-color: orange;
 }
 
-#about, #work, #homepage, #about .hidden_link, #work .hidden_link, #homepage .hidden_link {
+#about, #homepage, #work, #about .hidden_link, #homepage .hidden_link, #work .hidden_link {
     background-color: gray;
+}
+
+.contact_form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.f_content {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.f_content div {
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.f_name, .f_email {
+    width: 50%;
+}
+
+.contact_form input[type=text], .contact_form input[type=email] {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    border-color: rgb(59, 59, 59);
+    border-style: solid;
+    border-radius: 40px;
+    border-width: 1px;
+    padding: 11px 26px;
+    margin: 0 10px;
+    width: -webkit-fill-available; 
+    width: 100%;
+    height: 30px;
 }
