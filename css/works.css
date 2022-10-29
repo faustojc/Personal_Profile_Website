@@ -40,8 +40,6 @@
 }
 
 .w_img_bg {
-    /*background: var(--imgBg) no-repeat;
-    background-size: contain;*/
     width: 350px;
     height: 200px;
     margin: 20px 20px;
