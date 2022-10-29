@@ -100,6 +100,13 @@
     height: 25px;
 }
 
+.horizontal_line {
+    border-top: 1px solid rgb(66, 66, 66);
+    max-width: 40%;
+    height: 1px;
+    margin: 10px auto 55px;
+}
+
 .setup_text {
     color: orange;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
