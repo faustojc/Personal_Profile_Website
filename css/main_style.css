@@ -1,3 +1,23 @@
+/* width */
+::-webkit-scrollbar {
+    width: 9px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: yellow; 
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #0c0c0c;
+}
+
 /* Animation */
 @keyframes contentSlideUp {
     0% {
