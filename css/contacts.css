@@ -8,13 +8,13 @@
 
 .contact_form {
     width: 100%;
+    padding: 50px 0;
     display: flex;
     justify-content: center;
 }
 
 .f_content {
     width: 800px;
-    padding-top: 70px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -51,4 +51,80 @@
 .f_message textarea {
     height: var(--h);
     resize: vertical;
+}
+
+.f_button button {
+    position: relative;
+    background-color: transparent;
+    background-image: linear-gradient(to left, orange 50%, transparent 50%);
+    background-size: 200% 100%;
+    transition: background-position 0.5s ease-out;
+    cursor: pointer;
+    width: 250px;
+    height: var(--h);
+    margin: 0 10px;
+    border: 2px solid orange;
+    border-radius: 35px;
+}
+
+.f_button button:hover {
+    background-position: 100% 0;
+}
+
+.f_button-text {
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding-right: 20px;
+}
+
+.f_button-icon {
+    position: absolute;
+    background-color: orange;
+    width: 50px;
+    height: var(--h);
+    right: -1px;
+    top: -2px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f_button-icon::after {
+    content: '';
+    background-image: url('../resources/contacts/send.png');
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+}
+
+.setup_text {
+    color: orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    padding: 30px 0;
+    left: auto;
+    right: auto;
+    text-align: center;
+    margin: auto;
+}
+
+div.setup_content > * {
+    padding: 0 20px;
+    margin: 0;
+    width: 600px;
+}
+
+.setup_content {
+    display: flex;
+    align-items: center;
+}
+
+.text_info p {
+    color: white;
+    font-size: 17px;
+    text-justify: inter-word
 }
