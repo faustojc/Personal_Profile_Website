@@ -6,6 +6,13 @@
     background-color: gray;
 }
 
+.contact_info {
+    margin-top: 20px;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+
 .contact_form {
     width: 100%;
     padding: 50px 0;
@@ -130,8 +137,42 @@ div.setup_content > * {
     align-items: center;
 }
 
-.text_info p {
+div.text_desc > * {
+    padding: 10px;
+    margin: 0;
+}
+
+ul.specs_list li {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+ul.specs_list li span {
+    color: white;
+}
+
+.text_desc p {
     color: white;
     font-size: 17px;
     text-justify: inter-word
+}
+
+.pc-specs-text {
+    color: yellow;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: orange;
+}
+
+.specs_list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.s_comp {
+    filter: brightness(30%);
 }
